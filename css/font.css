@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Archivo";
+    src: url("../assets/fonts/Archivo-VariableFont_wdth\,wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_opsz\,wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Jost";
+    src: url("../assets/fonts/Jost-VariableFont_wdth\,wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/Manrope-VariableFont_wdth\,wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-VariableFont_wdth\,wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}

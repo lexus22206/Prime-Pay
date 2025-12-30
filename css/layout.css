@@ -1,0 +1,117 @@
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    padding-block: clamp(1.125rem, 1.8229vw, 2.1875rem);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    gap: 1rem;
+} 
+
+.header__logo,
+.header__button--login,
+.header__burger {
+    position: relative;
+    z-index: 100;
+}
+
+/* MOBILE MENU */
+
+.menu {
+    position: fixed;
+    inset: 0;
+    background: var(--color-background);
+    padding: 6rem 1.5rem 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.menu.open {
+    transform: translateY(0);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5625rem, 2.604vw, 3.125rem);
+    font-family: var(--font-ui);
+    color: var(--color-primary);
+    font-size: var(--fs-btn);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.menu__link {
+    position: relative;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+/* underline */
+.menu__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.menu__link.active::after {
+    transform: scaleX(1);
+}
+
+.header__button--login {
+    padding: clamp(0.875rem, 1.0416vw, 1.25rem) clamp(1.5rem, 2.1875vw, 2.625rem);
+}
+
+/* BURGER */
+
+.header__burger {
+    display: inline-flex;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+    .header__burger {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        inset: auto;
+        transform: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .menu__list {
+        flex-direction: row;
+        align-items: center;
+        gap: clamp(1.5rem, 2.0833vw, 3rem);
+        font-weight: 500;
+    }
+}
+
+/* HOVER */
+
+@media (hover: hover) and (pointer: fine) {
+    .menu__link:hover::after {
+        opacity: 1;
+        transform: scaleX(1);
+    }     
+}
