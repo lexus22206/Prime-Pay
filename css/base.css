@@ -3,9 +3,18 @@
     display: revert;
 }
 
-:where(a, button, input, textarea, select):focus-visible {
+:where(a, button):focus-visible {
     outline: 2px solid var(--color-secondary);
     outline-offset: 3px;
+    border-radius: 1%;
+}
+
+input, textarea, select {
+    outline: none;
+}
+
+:where(input, textarea, select):focus-visible {
+    box-shadow: 0 0 0 2px var(--color-secondary);
 }
 
 html {
@@ -39,6 +48,7 @@ table {
 }
 
 input, textarea {
+    user-select: auto;
     -webkit-user-select: auto;
 }
 textarea {
@@ -87,6 +97,7 @@ fieldset, legend {
     --color-content: #4e4e4e;
     --color-background: #f5f5f5;
     --color-background-grey: #f8f8f8;
+    --color-heading-grey: #8c8c8c;
 
     --font-ui: "Inter", sans-serif;
     --font-heading: "Jost", sans-serif;
@@ -96,11 +107,11 @@ fieldset, legend {
 
     --fs-base: clamp(0.875rem, 1.042vw, 1.25rem);
     --fs-h1: clamp(3rem, 4.17vw, 5rem);
-    --fs-h2: clamp(2.2rem, 2.9vw, 3.44rem);
+    --fs-h2: clamp(2.1rem, 2.9vw, 3.44rem);
     --fs-h3-sm: clamp(1.5625rem, 1.875vw, 1.875rem);
     --fs-h3-md: clamp(1.875rem, 2.1vw, 2.1875rem);
-    --fs-btn: 1.125rem;
-    /* clamp(0.875rem, 0.9375vw, 1.125rem) */
+    --fs-btn: clamp(0.75rem, 0.9375vw, 1.125rem);
+
     --container-normal: 87.5rem;
     --container-wide: 109rem;
 }
@@ -171,10 +182,20 @@ ol {
     list-style: none;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}  
+
+.main {
+    flex: 1;
+}
+
 .container {
     max-width: var(--container-normal);
     margin-inline: auto;
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
 }
 
 .container--wide {

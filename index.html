@@ -17,41 +17,169 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="header__logo">
-                    <img src="assets/images/logo.svg" alt="Prime Pay Logo">
-                </a>
-                <nav class="menu" aria-label="Main navigation">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">About us</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Features</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Pricing</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Blog</a>
-                        </li>
-                    </ul>        
-                </nav>
-                <button class="btn header__button--login">Login</button>
-                <button class="header__burger" aria-label="Open menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="Prime Pay Logo">
+                    </a>
+                    <nav class="menu" aria-label="Main navigation">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Features</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Pricing</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Blog</a>
+                            </li>
+                        </ul>        
+                    </nav>
+                    <button class="btn header__button--login">Login</button>
+                    <button class="header__burger" aria-label="Open menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <main class="main">
-    </main>
-
+        </header>
+    
+        <main class="main">
+            <!-- <h1 class="heading heading--blue-white">
+                Ready To Launch Your Online <span class="heading--accent">Payment</span> App
+            </h1> -->
+        </main>
+        
+        <footer class="footer">
+            <div class="subscription__wrapper">
+                <div class="container">
+                    <div class="subscription">
+                        <h2 class="heading subscription__heading heading--blue-white">
+                            Take control of your personal <span class="heading--accent">finances today</span>
+                        </h2>
+                        <form class="subscription__form" action="#" method="post">
+                            <input class="subscription__input" type="email" name="email" placeholder="Enter your email" required>
+                            <button class="btn subscription__button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container container--wide">
+                <div class="footer__inner">
+                    <div class="footer__brand">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/images/logo.svg" alt="Prime Pay Logo">
+                        </a>
+                        <div class="footer__text">
+                            Lorem ipsum dolor sitonsecteturadipisicing elit sed do eiusmod temporincididunt Laoreet non sagittis aliquam bibendum.
+                        </div>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.766 1.78471C16.9948 1.78824 18.1723 2.25953 19.0411 3.09565C19.91 3.93177 20.3998 5.06477 20.4035 6.24721V15.1713C20.3998 16.3537 19.91 17.4867 19.0411 18.3228C18.1723 19.1589 16.9948 19.6302 15.766 19.6338H6.49213C5.26333 19.6302 4.08591 19.1589 3.21701 18.3228C2.34812 17.4867 1.85835 16.3537 1.85468 15.1713V6.24721C1.85835 5.06477 2.34812 3.93177 3.21701 3.09565C4.08591 2.25953 5.26333 1.78824 6.49213 1.78471H15.766ZM15.766 0H6.49213C2.92138 0 0 2.81117 0 6.24721V15.1713C0 18.6073 2.92138 21.4185 6.49213 21.4185H15.766C19.3368 21.4185 22.2582 18.6073 22.2582 15.1713V6.24721C22.2582 2.81117 19.3368 0 15.766 0Z" fill="#231656" />
+                                        <path d="M17.1571 6.24762C16.8819 6.24762 16.613 6.16911 16.3842 6.02202C16.1554 5.87493 15.9771 5.66586 15.8718 5.42125C15.7665 5.17664 15.739 4.90748 15.7927 4.64781C15.8464 4.38814 15.9788 4.14961 16.1734 3.9624C16.368 3.77518 16.6158 3.64769 16.8857 3.59603C17.1555 3.54438 17.4352 3.57089 17.6894 3.67221C17.9436 3.77353 18.1609 3.94511 18.3138 4.16525C18.4666 4.38539 18.5482 4.64421 18.5482 4.90897C18.5486 5.08487 18.5129 5.25911 18.4431 5.4217C18.3733 5.58428 18.2709 5.732 18.1416 5.85638C18.0124 5.98076 17.8589 6.07935 17.6899 6.14649C17.5209 6.21363 17.3399 6.248 17.1571 6.24762ZM11.129 7.13974C11.8627 7.13974 12.58 7.34911 13.1901 7.74138C13.8002 8.13364 14.2757 8.69119 14.5565 9.3435C14.8372 9.99582 14.9107 10.7136 14.7676 11.4061C14.6244 12.0986 14.2711 12.7347 13.7523 13.2339C13.2334 13.7332 12.5724 14.0732 11.8528 14.211C11.1331 14.3487 10.3872 14.278 9.70929 14.0078C9.03141 13.7376 8.452 13.28 8.04436 12.693C7.63672 12.1059 7.41914 11.4157 7.41914 10.7096C7.42019 9.76316 7.81138 8.85573 8.50689 8.18646C9.2024 7.51719 10.1454 7.14075 11.129 7.13974ZM11.129 5.35503C10.0284 5.35503 8.95259 5.66907 8.0375 6.25744C7.12242 6.84582 6.4092 7.68209 5.98803 8.66052C5.56686 9.63895 5.45667 10.7156 5.67138 11.7543C5.88609 12.793 6.41606 13.7471 7.19427 14.4959C7.97249 15.2448 8.96399 15.7548 10.0434 15.9614C11.1228 16.168 12.2417 16.0619 13.2585 15.6567C14.2752 15.2514 15.1443 14.5651 15.7557 13.6845C16.3672 12.8039 16.6935 11.7687 16.6935 10.7096C16.6935 9.28951 16.1073 7.92754 15.0637 6.92336C14.0202 5.91917 12.6048 5.35503 11.129 5.35503Z" fill="#231656" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10.7716C23 4.82316 17.8507 0 11.5 0C5.14933 0 0 4.82316 0 10.7716C0 16.1477 4.20469 20.604 9.70312 21.4128V13.8862H6.78243V10.7716H9.70312V8.39846C9.70312 5.69932 11.4204 4.20717 14.0469 4.20717C15.3053 4.20717 16.6216 4.41779 16.6216 4.41779V7.06885H15.1708C13.743 7.06885 13.2964 7.89883 13.2964 8.7519V10.7716H16.4856L15.9763 13.8862H13.2969V21.4138C18.7953 20.6054 23 16.1492 23 10.7716Z" fill="#231656" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.4711 2.03383C20.6656 2.38354 19.8135 2.61393 18.9415 2.71773C19.8579 2.18151 20.5471 1.32962 20.8797 0.321843C20.0133 0.828105 19.067 1.18332 18.0813 1.37228C17.6663 0.937591 17.1671 0.591785 16.6141 0.35588C16.0611 0.119974 15.4659 -0.00110288 14.8647 7.56958e-06C12.4304 7.56958e-06 10.4604 1.93996 10.4604 4.33138C10.4587 4.66402 10.4968 4.99566 10.574 5.31924C8.82849 5.23746 7.11923 4.79249 5.55563 4.01279C3.99202 3.23308 2.6085 2.13582 1.49358 0.791187C1.10244 1.45011 0.895581 2.20192 0.894627 2.96805C0.894627 4.46995 1.67877 5.79752 2.86281 6.57529C2.1613 6.55865 1.47416 6.37312 0.859737 6.03443V6.08807C0.859737 8.18894 2.3806 9.93669 4.39352 10.3345C4.01499 10.4353 3.62493 10.4864 3.23318 10.4865C2.95521 10.487 2.67787 10.46 2.40521 10.406C2.9648 12.127 4.59346 13.3785 6.52273 13.4143C4.95506 14.6216 3.03038 15.2741 1.05119 15.2693C0.699875 15.2688 0.348889 15.2479 0 15.2067C2.01344 16.4915 4.3539 17.1711 6.74281 17.1646C14.8553 17.1646 19.2873 10.5625 19.2873 4.83648C19.2873 4.64875 19.2824 4.46101 19.2734 4.27774C20.1336 3.66628 20.8778 2.90641 21.4711 2.03383Z" fill="#231656" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.0104 0H1.85845C0.866599 0 0 0.71367 0 1.69387V19.8861C0 20.8717 0.866599 21.7499 1.85845 21.7499H20.0051C21.0023 21.7499 21.7499 20.8659 21.7499 19.8861V1.69387C21.7558 0.71367 21.0023 0 20.0104 0ZM6.74199 18.1296H3.62612V8.44169H6.74199V18.1296ZM5.29184 6.96872H5.2695C4.27231 6.96872 3.62661 6.2264 3.62661 5.29718C3.62661 4.35096 4.2893 3.62612 5.30883 3.62612C6.32836 3.62612 6.95221 4.34562 6.97454 5.29718C6.97406 6.2264 6.32836 6.96872 5.29184 6.96872ZM18.1296 18.1296H15.0138V12.8325C15.0138 11.5634 14.5603 10.6963 13.433 10.6963C12.5718 10.6963 12.062 11.2789 11.8353 11.8464C11.7503 12.0503 11.7275 12.328 11.7275 12.6116V18.1296H8.61161V8.44169H11.7275V9.7899C12.1809 9.1442 12.8893 8.21497 14.5375 8.21497C16.5829 8.21497 18.1301 9.56317 18.1301 12.4698L18.1296 18.1296Z" fill="#231656" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8329 4.19522C25.8329 1.96872 24.1519 0.177625 22.0747 0.177625C19.261 0.0494777 16.3915 0 13.459 0H12.5449C9.61949 0 6.74491 0.0494778 3.93127 0.17812C1.85914 0.17812 0.178066 1.97911 0.178066 4.20562C0.0510965 5.96653 -0.00273842 7.72794 0.000308844 9.48935C-0.00476992 11.2508 0.0527894 13.0138 0.172987 14.7785C0.172987 17.005 1.85406 18.811 3.92619 18.811C6.88204 18.9446 9.91406 19.0039 12.9969 18.999C16.0848 19.0089 19.1083 18.9462 22.0675 18.811C24.1448 18.811 25.8258 17.005 25.8258 14.7785C25.9477 13.0122 26.0036 11.2508 25.9985 9.4844C26.01 7.72299 25.9548 5.95993 25.8329 4.19522ZM10.5134 14.3431V4.62073L17.8776 9.47946L10.5134 14.3431Z" fill="#231656" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <nav class="footer__nav">
+                            <h3 class="footer__nav-title">Menu</h3>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">About</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Features</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Pricing
+                                        <span class="menu-badge menu-badge--offer">Offer</span>
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Blog</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">How it works</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__nav">
+                            <h3 class="footer__nav-title">Utility pages</h3>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Style guide</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Password protected</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">404 not found</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Licenses</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">Changelog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__address">
+                            <h3 class="footer__address-title">Address</h3>
+                            <p class="footer__address-item">
+                                1700 W Blancke St, kiyev port south USA, America
+                            </p>
+                            <div class="footer__address-links">
+                                <a class="footer__address-link" href="tel:+3255456789">+3255 456 789</a>
+                                <a class="footer__address-link" href="mailto:mail@primpay.com">mail@primpay.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+            <div class="footer__copyright">
+                <small>Copyright &copy; <span>Primarily</span></small>
+            </div>
+        </footer>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

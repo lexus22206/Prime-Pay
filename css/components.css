@@ -1,3 +1,27 @@
+/* HEADING-COLOR */
+
+.heading--blue-white {
+    --heading--main: var(--color-primary);
+    --heading--accent: #FFFFFF;
+}
+
+.heading--gray-blue {
+    --heading--main: var(--color-heading-grey);
+    --heading--accent: var(--color-primary);
+}
+
+.heading--gray-white {
+    --heading--main: var(--color-heading-grey);
+    --heading--accent: #FFFFFF;
+}
+
+.heading {
+    color: var(--heading--main);
+}
+
+.heading--accent {
+    color: var(--heading--accent);
+}
 /* BUTTONS */
 
 .btn {
