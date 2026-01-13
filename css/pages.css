@@ -1,0 +1,192 @@
+.hero {
+    position: relative;
+    padding-block-end: clamp(1.125rem, 1.9792vw, 2.375rem);
+    z-index: 11;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.125rem, 1.71875vw, 2.0625rem);
+    text-align: center;
+    border-radius: 40px;
+    background-color: #fff0ec;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(
+        url("../assets/images/background-hero.avif") type("image/avif"),
+        url("../assets/images/background-hero.webp") type("image/webp"),
+        url("../assets/images/background-hero.png") type("image/png")
+    );
+    padding: clamp(3.5rem, 6.71875vw, 8.0625rem) 1rem clamp(20rem, 27.5vw, 33rem);
+}
+
+.hero__content .heading {
+    position: relative;
+    width: clamp(15.75rem, 50vw, 60rem);
+    margin: 0 auto;
+    z-index: 11;
+}
+
+.hero__text {
+    position: relative;
+    font-size:clamp(1rem, 1.3021vw, 1.5625rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    z-index: 11;
+}
+
+.hero__content .btn {
+    position: relative;
+    padding: clamp(1rem, 1.3021vw, 1.5625rem) clamp(1.5625rem, 2.5vw, 3rem);
+    margin: 0 auto;
+    z-index: 11;
+}
+
+.hero__visual {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero__phone {
+    position: absolute;
+    width: clamp(17rem, 21.97916vw, 26.375rem);
+    height: clamp(36rem, 47.03125vw, 56.4375rem);
+    bottom: -37.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(17px 23px 84px rgba(133, 133, 133, 0.25));
+}
+
+.hero__decor--left {
+    display: none;
+}
+
+.hero__decor--right {
+    display: none;    
+}
+
+/* SECTION FEATURES */
+
+.features {
+    position: relative;
+    padding-block-start: clamp(1.125rem, 1.9792vw, 2.375rem);
+}
+
+.features__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(2rem, 2.86458vw, 3.4375rem);
+    padding-block: clamp(20rem, 25.833vw, 31rem) clamp(7rem, 8.4375vw, 10.125rem);
+    background-color: var(--color-background);
+    border-radius: 30px;    
+}
+
+.features__decor {
+    display: none;
+}
+
+.feature {
+    text-align: center;
+    width: clamp(12rem, 22.3958vw, 26.875rem);
+}
+
+.feature__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: clamp(11rem, 12.1666vw, 15rem);
+    height: clamp(4rem, 5vw, 6rem);
+    margin: 0 auto clamp(1rem, 1.6666vw, 2rem);
+}
+
+.feature__badge {
+    display: none;
+}
+
+.feature__title {
+    font-size: var(--fs-h3-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.4375rem;
+    min-height: calc(1.33em * 2);
+}
+
+.feature__title, 
+.feature__text {
+    line-height: 1.33;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+    .hero__decor--left {
+        position: absolute;
+        display: block;
+        left: clamp(6rem, 13.3333vw, 10rem);
+        bottom: clamp(10rem, 13.5416vw, 16.25rem);
+        width: clamp(10rem, 12.86458vw, 15.4375rem);
+        height: clamp(9rem, 11.51042vw, 13.8125rem);
+        transform: rotate(-49deg);
+        z-index: 10;
+    }
+
+    .hero__decor--right {
+        position: absolute;
+        display: block;
+        right: clamp(6rem, 15.875vw, 19.05rem);
+        bottom: clamp(3rem, 4.94791vw, 5.9375rem);
+        width: clamp(8rem, 11.14583vw, 13.375rem);
+        height: clamp(8.5rem, 12.08333vw, 14.5rem);
+        z-index: 10;
+    }
+
+    .features__inner {
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .features__decor {
+        position: absolute;
+        display: block;
+        top: clamp(4rem, 5.20833vw, 6.25rem);
+        left: clamp(10rem, 20.85416vw, 25.625rem);
+        width: clamp(4rem, 7.65625vw, 9.1875rem);
+        height: clamp(4rem, 7.65625vw, 9.1875rem);
+        transform: rotate(19deg);
+        z-index: 10;
+    }
+    .feature__badge {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: clamp(2rem, 2.34375vw, 2.8125rem);
+        height: clamp(2rem, 2.34375vw, 2.8125rem);
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .hero__decor--left {
+        left: clamp(5rem, 22.39583vw, 26.875rem);
+    }
+    .hero__decor--right {
+        right: clamp(6rem, 21.875vw, 26.25rem);
+    }
+    .features__decor {
+        left: clamp(15rem, 23.85416vw, 28.625rem);
+    }
+}
